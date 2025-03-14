@@ -15,12 +15,20 @@
 //     console.log("Rahim")
 //     console.log("Aakash")
 //     i++;
-// }
+// // }
 
+// let i =1;
+// let sum = 0;
+// while(i<=10){
+//     sum=sum+i;
+//     i++;//i=i+1,i+=1;i++
+// }
+// console.log(sum)
+//multiplication
 let i =1;
-let sum = 0;
+let sum = 1 ;
 while(i<=10){
-    sum=sum+i;
-    i++;//i=i+1,i+=1;i++
+    sum *=i;
+    i++;
 }
-console.log(sum)
+console.log(sum);
