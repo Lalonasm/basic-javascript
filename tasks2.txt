@@ -11,3 +11,20 @@ for in loop
 bonus part - template string
 
 
+
+
+//DOM
+1. Traversing DOM elements
+    (a) Signle Element Selector[getElementById,querySelector]
+     (b) Multiple Element Selector[getElementsByTagName(),
+     getElementsByClassName, querySelectorAll()];
+    (c) Nodes VS Element in DOM
+    (d) Get ChildNodes Property
+    (e)Get Children Element Nodes
+2. Traversing DOM Hierarchy
+3. Manuipulate the DOM-setAttribute,getAttribute,removeAttribute,
+appendChild,add,remove,classList,inserBefore,removeChild
+4. Listening to DOM Events
+5. DOM Project
+6. Resource0  
+

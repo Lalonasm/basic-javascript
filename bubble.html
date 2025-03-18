@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="grandParent">
+      GrandParent
+      <div id="parent">
+        Parent
+        <div id="child">Child</div>
+      </div>
+    </div>
+    <style>
+      div {
+        min-height: 200px;
+        min-width: 100px;
+        border-radius: 10px;
+        margin: 50px;
+        border: 2px solid black;
+      }
+    </style>
+    <script>
+      document.getElementById("grandParent").addEventListener(
+        "click",
+        function (e) {
+            e.stopPropagation();
+          console.log("GrandParent");
+        },
+        false
+      );
+      document.getElementById("parent").addEventListener(
+        "click",
+        function (e) {
+          console.log("Parent");
+          //   e.stopPropagation();
+        },
+        false
+      );
+      document.getElementById("child").addEventListener(
+        "click",
+        function (e) {
+          console.log("Child");
+        },
+        false
+      );
+    </script>
+  </body>
+</html>

@@ -125,3 +125,4 @@ function details(info) {
 // console.log(details({name:"Lalon Sheikh",age:"38"}))
 console.log(details({ age: -38, name: "Lalon Sheikh" }))
 // console.log(details('xyz'))
+
