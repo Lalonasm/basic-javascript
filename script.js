@@ -23,7 +23,7 @@ function clickMe() {
 
 function clickMinus() {
   if (sum <= 0) {
-    return "Please use + button";
+    return alert("Please use + button");
   }
   console.log("minus");
   sum -= 1;
