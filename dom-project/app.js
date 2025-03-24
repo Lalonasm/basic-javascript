@@ -20,7 +20,7 @@ for (let btn of allBtn) {
     const p2 = document.createElement("p");
     p2.innerText = price;
 
-e.target.parentNode.parentNode.style.backgroundColor = "grey"
+    e.target.parentNode.parentNode.style.backgroundColor = "grey";
 
     li.appendChild(p);
     li.appendChild(p2);

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="menu-container">
+      <h3>Budget: <span class="price-color" id="budget">2500</span> $</h3>
+      <h3>Cart: <span class="price-color" id="cart"> 0</span></h3>
+      <h3>left:<span class="price-color" id="left"> 6</span></h3>
+    </div>
+    <div class="main-container">
+      <!-- main player container structure -->
+      <div class="players-container">
+        <div class="player-container">
+          <div class="player-btn">
+            <h5 class="name">Tamim Iqbal</h5>
+            <h5 class="price">Price: <span>300</span></h5>
+            <h5 class="category">Category: <span>Bat</span></h5>
+            <button class="add-btn">Add to Cart</button>
+          </div>
+          <div class="player-btn">
+            <h5 class="name">Sakib Al Hasan</h5>
+            <h5 class="price">Price: <span>500</span></h5>
+            <h5 class="category">Category: <span>All Rounder </span></h5>
+            <button class="add-btn">Add to Cart</button>
+          </div>
+          <div class="player-btn">
+            <h5 class="name">Musfikur Rahman</h5>
+            <h5 class="price">Price: <span>400</span></h5>
+            <h5 class="category">Category: <span>Bat</span></h5>
+            <button class="add-btn">Add to Cart</button>
+          </div>
+          <div class="player-btn">
+            <h5 class="name">Taskin Ahmed</h5>
+            <h5 class="price">Price: <span>200</span></h5>
+            <h5 class="category">Category: <span>Baller</span></h5>
+            <button class="add-btn">Add to Cart</button>
+          </div>
+          <div class="player-btn">
+            <h5 class="name">Tamim Iqbal</h5>
+            <h5 class="price">Price: <span>300</span></h5>
+            <h5 class="category">Category: <span>Bat</span></h5>
+            <button class="add-btn">Add to Cart</button>
+          </div>
+          <div class="player-btn">
+            <h5 class="name">Tamim Iqbal</h5>
+            <h5 class="price">Price: <span>300</span></h5>
+            <h5 class="category">Category: <span>Bat</span></h5>
+            <button class="add-btn">Add to Cart</button>
+          </div>
+          <div class="player-btn">
+            <h5 class="name">Tamim Iqbal</h5>
+            <h5 class="price">Price: <span>300</span></h5>
+            <h5 class="category">Category: <span>Bat</span></h5>
+            <button class="add-btn">Add to Cart</button>
+          </div>
+          <div class="player-btn">
+            <h5 class="name">Tamim Iqbal</h5>
+            <h5 class="price">Price: <span>300</span></h5>
+            <h5 class="category">Category: <span>Bat</span></h5>
+            <button class="add-btn">Add to Cart</button>
+          </div>
+          <div class="player-btn">
+            <h5 class="name">Tamim Iqbal</h5>
+            <h5 class="price">Price: <span>300</span></h5>
+            <h5 class="category">Category: <span>Bat</span></h5>
+            <button class="add-btn">Add to Cart</button>
+          </div>
+          <div class="player-btn">
+            <h5 class="name">Tamim Iqbal</h5>
+            <h5 class="price">Price: <span>300</span></h5>
+            <h5 class="category">Category: <span>Bat</span></h5>
+            <button class="add-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <!-- cart container html structure -->
+      <div class="cart-container">
+        <h2>My Cart</h2>
+        <hr />
+        <div class="selected-player">
+          <div class="name">Name</div>
+          <div class="price">Price</div>
+          <div class="category">Category</div>
+        </div>
+        <div id="selected-players-container"></div>
+        <hr />
+        <h3 class="padding">Total Cost: <span id="total-cost">0</span> $</h3>
+        <hr />
+        <div class="coupon-code">
+          <input
+            type="text"
+            width="100"
+            height="20"
+            name="Coupon Code"
+            placeholder="Coupon Code"
+            id="input"
+          />
+          <button id="apply-btn">Apply</button>
+        </div>
+        <hr />
+        <h3 class="padding">Grand Total <span id="grand-toatal">0</span> $</h3>
+      </div>
+    </div>
+
+    <!-- add javascript file here -->
+    <script src="app.js"></script>
+  </body>
+</html>
