@@ -2,10 +2,6 @@
 // const price = document.getElementById("budget").textContent;
 // console.log(typeof price);
 
-// function getConvertedValue(id) {
-//   const price = document.getElementById(id).textContent;
-//   return parseInt(price);
-// }
 // const result = getConvertedValue("budget");
 // const result1 = getConvertedValue("cart");
 // const result2 = getConvertedValue("left");
@@ -22,6 +18,38 @@ for (let btn of allBtn) {
     const selectedPlayersContainer = document.getElementById(
       "selected-players-container"
     );
+    
+    //cart condition
+    const firstCount = getConvertedValue("cart");
+    if (firstCount + 1 > 6) {
+      alert("six er beshi ar hobe na...");
+      return;
+    }
+    e.target.setAttribute("disabled", false);
+    e.target.parentNode.style.backgroundColor = "red";
+    //left condition
+    const firstleft = getConvertedValue("left");
+    if (firstleft - 1 < 0) {
+      alert("six er beshi ar hobe na...");
+      return;
+    }
+    //budget condition
+    const firstBudget = getConvertedValue("budget");
+    if (firstBudget <= 0) {
+      alert("add more money");
+      return;
+    }
+
+    //update budget
+    const budget = getConvertedValue("budget");
+    document.getElementById("budget").textContent = budget - parseInt(price);
+    //update cart
+    const cart = document.getElementById("cart").textContent;
+    document.getElementById("cart").innerText = parseInt(cart) + 1;
+    //update left
+    const left = getConvertedValue("left");
+    document.getElementById("left").innerText = left - 1;
+
     const div = document.createElement("div");
     div.classList.add("selected-players-container");
     const p1 = document.createElement("p");
@@ -34,5 +62,44 @@ for (let btn of allBtn) {
     div.appendChild(p2);
     div.appendChild(p3);
     selectedPlayersContainer.appendChild(div);
+    updateTotalCost(price);
+    updateGrandTotal();
   });
+}
+function updateGrandTotal(status) {
+  console.log(status);
+  const totalCost = getConvertedValue("total-cost");
+  if (status === undefined) {
+    // const totalCost = document.getElementById("total-cost").textContent;
+    document.getElementById("grand-total").textContent = totalCost;
+  } else {
+    const couponCode = document.getElementById("coupon-code").value;
+    if (couponCode === "love") {
+      const discountedPrice = totalCost * 0.2;
+      document.getElementById("grand-total").textContent =
+        totalCost - discountedPrice;
+      console.log(discountedPrice);
+    } else {
+      alert("Please enter a valid coupon code...");
+    }
+  }
+}
+// function updateTotalCost(value) {
+//   console.log(value);
+//   const totalCost = getConvertedValue("total-cost");
+//   const sum = totalCost + parseInt(value);
+//   document.getElementById("total-cost").textContent = sum;
+// }
+function updateTotalCost(price) {
+  const totalCost = document.getElementById("total-cost").textContent;
+
+  const sum = parseInt(totalCost) + parseInt(price);
+  document.getElementById("total-cost").innerText = sum;
+  console.log(typeof totalCost);
+
+  // return parseInt(price);
+}
+function getConvertedValue(id) {
+  const price = document.getElementById(id).textContent;
+  return parseInt(price);
 }

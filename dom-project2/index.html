@@ -24,7 +24,7 @@
           </div>
           <div class="player-btn">
             <h5 class="name">Sakib Al Hasan</h5>
-            <h5 class="price">Price: <span>500</span></h5>
+            <h5 class="price">Price: <span>600</span></h5>
             <h5 class="category">Category: <span>All Rounder </span></h5>
             <button class="add-btn">Add to Cart</button>
           </div>
@@ -41,37 +41,37 @@
             <button class="add-btn">Add to Cart</button>
           </div>
           <div class="player-btn">
-            <h5 class="name">Tamim Iqbal</h5>
-            <h5 class="price">Price: <span>300</span></h5>
+            <h5 class="name">Nayem Ahmed</h5>
+            <h5 class="price">Price: <span>100</span></h5>
             <h5 class="category">Category: <span>Bat</span></h5>
             <button class="add-btn">Add to Cart</button>
           </div>
           <div class="player-btn">
-            <h5 class="name">Tamim Iqbal</h5>
-            <h5 class="price">Price: <span>300</span></h5>
+            <h5 class="name">Zohurul Hoque</h5>
+            <h5 class="price">Price: <span>200</span></h5>
+            <h5 class="category">Category: <span>Baller</span></h5>
+            <button class="add-btn">Add to Cart</button>
+          </div>
+          <div class="player-btn">
+            <h5 class="name">Aftab Ahmed</h5>
+            <h5 class="price">Price: <span>150</span></h5>
             <h5 class="category">Category: <span>Bat</span></h5>
             <button class="add-btn">Add to Cart</button>
           </div>
           <div class="player-btn">
-            <h5 class="name">Tamim Iqbal</h5>
-            <h5 class="price">Price: <span>300</span></h5>
+            <h5 class="name">Mahmudullah Riyadh</h5>
+            <h5 class="price">Price: <span>200</span></h5>
             <h5 class="category">Category: <span>Bat</span></h5>
             <button class="add-btn">Add to Cart</button>
           </div>
           <div class="player-btn">
-            <h5 class="name">Tamim Iqbal</h5>
-            <h5 class="price">Price: <span>300</span></h5>
+            <h5 class="name">Md. Rafiq</h5>
+            <h5 class="price">Price: <span>250</span></h5>
             <h5 class="category">Category: <span>Bat</span></h5>
             <button class="add-btn">Add to Cart</button>
           </div>
           <div class="player-btn">
-            <h5 class="name">Tamim Iqbal</h5>
-            <h5 class="price">Price: <span>300</span></h5>
-            <h5 class="category">Category: <span>Bat</span></h5>
-            <button class="add-btn">Add to Cart</button>
-          </div>
-          <div class="player-btn">
-            <h5 class="name">Tamim Iqbal</h5>
+            <h5 class="name">Rubel Ahmed</h5>
             <h5 class="price">Price: <span>300</span></h5>
             <h5 class="category">Category: <span>Bat</span></h5>
             <button class="add-btn">Add to Cart</button>
@@ -80,7 +80,7 @@
       </div>
       <!-- cart container html structure -->
       <div class="cart-container">
-        <h2>My Cart</h2>
+        <h2 class="padding">My Cart</h2>
         <hr />
         <div class="selected-player">
           <div class="name">Name</div>
@@ -98,12 +98,15 @@
             height="20"
             name="Coupon Code"
             placeholder="Coupon Code"
-            id="input"
+            id="coupon-code"
+            class="input"
           />
-          <button id="apply-btn">Apply</button>
+          <button onclick="updateGrandTotal('apply-btn')" id="apply-btn">
+            Apply
+          </button>
         </div>
         <hr />
-        <h3 class="padding">Grand Total <span id="grand-toatal">0</span> $</h3>
+        <h3 class="padding">Grand Total <span id="grand-total">0</span> $</h3>
       </div>
     </div>
 
